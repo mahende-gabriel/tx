@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <title>Login Form</title>
+  <style>
+    /* Apply styles to the link with the class "button-link" */
+    .button-link {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    /* Add a hover effect */
+    .button-link:hover {
+      background-color: #2980b9;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      
+  }
+  
+  .logo img {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 90px; /* Adjust the width as needed */
+      height: 90px; /* Adjust the height as needed */
+      margin-right: 10px;
+  }
+  .header {
+      background-color: rgba(255, 255, 255, 0.5);
+      color: white;
+      padding: 20px 0;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+  }
+  .white-header {
+    background-color: (255,255,255,0.9);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .white-header h1,p {
+    color: white;
+  }
+
+      </style>
+</head>
+<body>
+  <header class="white-header">
+    <h1>TELECOMMUNICATION SERVICE BOARD</h1>
+    <p>Management Information System (MIS)</p>
+  <div class="logo">
+    <img src="signal3.png" alt="MyLogo">
+  </div>
+  
+  </header>
+  <div class="container">
+    <form class="login-form" action="logindb.php" method="post">
+        <img src="key.png" alt="Logo" class="logo">
+      <h2>Login</h2>
+      <div class="input-group">
+       
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <span class="error-message" id="email-error"></span>
+      </div>
+      <div class="input-group">
+        
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <span class="error-message" id="password-error"></span>
+      </div>
+      
+      <button type="submit" name="login">Login</button>
+      <p class="register-link">Don't have an account? <a href="Registration.html">Register here</a></p>
+    </form>
+    <a href="home.html" class="button-link">HOME</a>
+  </div>
+  <script src="login.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotPress Integration</title>
+</head>
+<body>
+    <h1>Welcome to the BotPress Chat</h1>
+    
+    <!-- Embed the BotPress widget here -->
+    <div id="botpress-container"></div>
+    
+    <!-- Embed the BotPress widget script -->
+    <script>
+        // Replace with your actual BotPress widget embed code
+        
+        const botpressEmbedCode = '<your-embed-code-goes-here>';
+        
+        // Create a script element to load the BotPress widget script
+        const scriptElement = document.createElement('script');
+        scriptElement.src = botpressEmbedCode;
+        
+        // Append the script element to the body
+        document.body.appendChild(scriptElement);
+    </script>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/1a3dbaab-6a60-4490-aeb4-fb84a2913327/webchat/config.js" defer></script>
+</body>
+</html>
